@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/my.css">
+    <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css"> -->
+
+
+    <script>
+        window.hdjs = {
+            //组件目录必须绝对路径
+            base: 'node_modules/hdjs',
+            //上传文件后台地址
+            uploader: '/uploader.php?',
+            //获取文件列表的后台地址
+            filesLists: '/filesLists.php?',
+            //require.js配置项（可为空）
+            requireJs: { paths: {}, shim: {} },
+        };
+
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/hdjs/require.js"></script>
+    <script src="node_modules/hdjs/config.js"></script>
+
+    <style>
+        body {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example" data-offset="200">
+    <!-- 侧边栏 -->
+    <div style="position:fixed;top: 200px;right:0;width:6rem;">
+            <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left"
+                            data-html="true" style="border:1px solid #ccc;width: 100%"
+                            title="<img src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=470395640,3286263190&fm=26&gp=0.jpg'  width=100 height=100 >">
+                            <i class="fa fa-address-card" aria-hidden="true" style="font-size:3rem"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left"
+                            title="Tooltip on left" style="border:1px solid #ccc;width: 100%">
+                            <i class="fa fa-weixin" style="font-size:3rem"></i>
+                        </button>
+    
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left"
+                            title="Tooltip on left" style="border:1px solid #ccc;width: 100%">
+                            <i class="fa fa-windows" style="font-size:3rem"></i>
+                        </button>
+    
+                    </li>
+                </ul>
+    </div>
+    <div id="navbar-example">
+        <ul class="nav fixed-bottom nav-tabs" role="tablist" style="background:white">
+            <li class="nav-item">
+                <a class="nav-link" href="#list-item-1">@fat</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#list-item-2">@fat</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#list-item-3">@fat</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#list-item-4">@fat</a>
+            </li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-2">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left"
+                        data-html="true"
+                        title="<img src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=470395640,3286263190&fm=26&gp=0.jpg'  width=100 height=100 >">
+                        Tooltip with HTML
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left"
+                        title="Tooltip on left">
+                        Tooltip on left
+                    </button>
+
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left"
+                        title="Tooltip on left">
+                        Tooltip on left
+                    </button>
+
+                </li>
+            </ul>
+            <h4 id="list-item-1">Item 1</h4>
+            <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna
+                ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum
+                incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod
+                consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing
+                dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit
+                cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
+
+            <h4 id="list-item-2">Item 2</h4>
+            <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna
+                ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum
+                incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod
+                consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing
+                dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit
+                cupidatat commodo velit ut eiusmod cupidatat elit dolore </p>
+
+            <h4 id="list-item-3">Item 3</h4>
+            <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna
+                ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum
+                incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod
+                consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing
+                dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit
+                cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
+            <h4 id="list-item-4">Item 4</h4>
+            <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna
+                ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum
+                incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod
+                consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing
+                dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit
+                cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
+        </div>
+    </div>
+</body>
+<script>
+
+    require(['hdjs', 'bootstrap'], function (hdjs) {
+        $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
+            console.log('a')
+        })
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    })
+</script>
+
+</html>
