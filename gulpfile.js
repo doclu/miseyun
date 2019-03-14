@@ -3,7 +3,7 @@ var gulp=require('gulp');
 var sass=require('gulp-sass');
 var watch=require('gulp-watch');
 
-gulp.task('watch',function(){
+gulp.task('default',function(){
     return watch('./asset/my.scss',function(){
         gulp.src('./asset/my.scss')
         .pipe(sass())
