@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>漫象科技-互联网解决方案供应商</title>
     <link rel="stylesheet" href="asset/css/my.css">
 
 
@@ -31,10 +31,10 @@
 
 <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="root">
         <!-- //导航栏 -->
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="/document.html">MiseYun</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,32 +42,30 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">视觉营销</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                        <a class="nav-link" href="#">高端建站</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <a class="nav-link" href="#">小程序</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">微商城</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">微站</a>
+                    </li>
+
+
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-                </form>
+
+
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" onclick="login()">登陆</button>
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">注册</button>
+
             </div>
         </nav>
 
@@ -105,87 +103,79 @@
 
 
         <!-- //内容 -->
-
+        <div class="progress">
+                <div class="progress-bar" role="progressbar" :style="'width:'+process+'%'" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
         <div class="row">
-            <div class="col-12 col-md-2">
-                <figure class="figure">
+            
+            <div class="col-6">
 
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <figcaption class="figure-caption">限时5折，降低采购和运维成本，助力中小企业成长</figcaption>
-                </figure>
+                <div id="show">{{out}}{{j}}</div>
             </div>
-            <div class="col-12 col-md-2">
-                <figure class="figure">
-                    <img src="..." class="figure-img img-fluid rounded"
-                        alt="A generic square placeholder image with rounded corners in a figure.">
-                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
-                </figure>
-            </div>
-            <div class="col-12 col-md-2">
-                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right"
-                    title="Tooltip on left">
-                    Tooltip on left
-                </button>
-            </div>
-
-            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true"
-                title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
-                Tooltip with HTML
-            </button>
-        </div>
-        <div class="row">
-            <div class="col-md-2">
-                    <div id="list-example" class="list-group">
-                            <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-                        </div>
-            </div>
-            <div class="col-md-8">
-                        <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example" style="overflow:scroll;height: 300px;">
-                
-                            <h4 id="list-item-1">Item 1</h4>
-                            <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna
-                                ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum
-                                incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod
-                                consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing
-                                dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit
-                                cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
-                
-                            <h4 id="list-item-2">Item 2</h4>
-                            <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna
-                                ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum
-                                incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod
-                                consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing
-                                dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit
-                                cupidatat commodo velit ut eiusmod cupidatat elit dolore  </p>
-                
-                            <h4 id="list-item-3">Item 3</h4>
-                            <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna
-                                ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum
-                                incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod
-                                consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing
-                                dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit
-                                cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
-                            <h4 id="list-item-4">Item 4</h4>
-                            <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna
-                                ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum
-                                incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod
-                                consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing
-                                dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit
-                                cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
-                        </div>
+            <div class="col-6">
+                <textarea name="" id="cc" cols="30" rows="10"></textarea>
+                <button @click='trans'>输出</button>
+                <button @click='add'>+</button>
+                <button @click='hel'>-</button>
+               
             </div>
         </div>
-        
+
+
+        <script>
+            require(['MarkdownIt', 'vue'], function (MarkdownIt, Vue) {
+                new Vue({
+                    el: '#root',
+                    data: {
+                        j: '',
+                        out: '',
+                        process: 25
+                    },
+                    methods: {
+                        first: function () {
+                            let md = new MarkdownIt();
+                            let content = md.render(this.j);
+                            $('#show').html(content);
+
+                        },
+                        trans: function () {
+
+                            this.j = $('#cc').val();
+                            console.log(this.j)
+                            this.first();
+                        },
+                        add:function(){
+                            this.process++;
+                            
+                        },
+                        hel:function(){
+                            this.process--;
+                        }
+                    }
+                })
+
+            })
+        </script>
     </div>
 </body>
 <script>
+    function login() {
+        require(['hdjs', 'bootstrap'], function (hdjs) {
 
-    require(['hdjs', 'bootstrap'], function (hdjs) {
-       
-    })
+            hdjs.modal({
+                content: ['http://localhost'],//加载的远程地址
+                title: '添加用户',
+                width: 800,
+                show: true,//直接显示
+            })
+        })
+
+    }
+
+
+
+
 </script>
 
 </html>

@@ -5,6 +5,8 @@ $navbar-dark-color:                 #00c1de !default;
 $dark:          rgb(31, 29, 29) !default;
 $tooltip-bg:                        #00c1de !default;
 $fa-font-path:'node_modules/font-awesome/fonts';
+$border-radius-lg:0;
+
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../node_modules/font-awesome/scss/font-awesome.scss';
