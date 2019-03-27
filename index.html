@@ -30,7 +30,6 @@
 </head>
 
 <body>
-
     <div class="container-fluid" id="root">
         <!-- //导航栏 -->
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
@@ -39,10 +38,8 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-
                     <li class="nav-item">
                         <a class="nav-link" href="#">视觉营销</a>
                     </li>
@@ -58,13 +55,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">微站</a>
                     </li>
-
-
                 </ul>
-
-
                 <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" onclick="login()">登陆</button>
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">注册</button>
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" @mouseover='test()'>注册</button>
+            </div>
+            <div :class="menu">
 
             </div>
         </nav>
@@ -89,93 +84,136 @@
                 </div>
 
             </div>
-            <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span> -->
-            </a>
+
         </div>
 
 
 
 
         <!-- //内容 -->
-        <div class="progress">
-                <div class="progress-bar" role="progressbar" :style="'width:'+process+'%'" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-        <div class="row">
-            
-            <div class="col-6">
 
-                <div id="show">{{out}}{{j}}</div>
-            </div>
-            <div class="col-6">
-                <textarea name="" id="cc" cols="30" rows="10"></textarea>
-                <button @click='trans'>输出</button>
-                <button @click='add'>+</button>
-                <button @click='hel'>-</button>
-               
+
+        <div class="imgwall">
+            <div class="wrap" id="projects">
+                <a href="">
+                    <img src="https://threejs.org/files/projects/oatthegoat.png" alt="">
+                </a>
+                <a href="">
+                    <img src="https://threejs.org/files/projects/oatthegoat.png" alt="">
+                </a>
+                <a href="">
+                    <img src="https://threejs.org/files/projects/oatthegoat.png" alt="">
+                </a>
+                <a href="">
+                    <img src="https://threejs.org/files/projects/oatthegoat.png" alt="">
+                </a>
+                <a href="">
+                    <img src="https://threejs.org/files/projects/oatthegoat.png" alt="">
+                </a>
+                <a href="">
+                    <img src="https://threejs.org/files/projects/oatthegoat.png" alt="">
+                </a>
+                <a href="">
+                    <img src="https://threejs.org/files/projects/oatthegoat.png" alt="">
+                </a>
+                <a href="">
+                    <img src="https://threejs.org/files/projects/oatthegoat.png" alt="">
+                </a>
+                <a href="">
+                    <img src="https://threejs.org/files/projects/oatthegoat.png" alt="">
+                </a>
+                <a href="">
+                    <img src="https://threejs.org/files/projects/oatthegoat.png" alt="">
+                </a>
+                <a href="">
+                    <img src="https://threejs.org/files/projects/oatthegoat.png" alt="">
+                </a>
+
             </div>
         </div>
 
+        <div class="clear"></div>
+        <div class="row">
+            <div class="col-12 col-md-6 cc">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="http://www-asia.infiniti-cdn.net/content/dam/Infiniti/infiniti-f1/2018/landing/infiniti-renault-sport-formula-1-nico-hulkenberg.png"
+                            alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 ">
+                        <img src="http://www-asia.infiniti-cdn.net/content/dam/Infiniti/infiniti-f1/2018/landing/infiniti-renault-sport-formula-1-nico-hulkenberg.png"
+                            alt="">
+                    </div>
+                    <div class="col-12 col-md-6 ">
+                        <img src="http://www-asia.infiniti-cdn.net/content/dam/Infiniti/infiniti-f1/2018/landing/infiniti-renault-sport-formula-1-nico-hulkenberg.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 cc">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="content">
+                            jfeijwifjwo
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="http://www-asia.infiniti-cdn.net/content/dam/Infiniti/infiniti-f1/2018/landing/infiniti-renault-sport-formula-1-nick-chester.png"
+                                    alt="">
+                            </div>
+                        </div>
 
-        <script>
-            require(['MarkdownIt', 'vue'], function (MarkdownIt, Vue) {
-                new Vue({
-                    el: '#root',
-                    data: {
-                        j: '',
-                        out: '',
-                        process: 25
-                    },
-                    methods: {
-                        first: function () {
-                            let md = new MarkdownIt();
-                            let content = md.render(this.j);
-                            $('#show').html(content);
 
-                        },
-                        trans: function () {
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div>
+                            <img src="http://www-asia.infiniti-cdn.net/content/dam/Infiniti/infiniti-f1/2018/landing/infiniti-renault-sport-formula-1-carlos-sainz.png"
+                                alt="">
+                        </div>
+                        <div>
+                            <img src="//www-asia.infiniti-cdn.net/content/dam/Infiniti/infiniti-f1/2018/landing/infiniti-renault-sport-formula-1-bob-bell.png"
+                                alt="">
+                        </div>
 
-                            this.j = $('#cc').val();
-                            console.log(this.j)
-                            this.first();
-                        },
-                        add:function(){
-                            this.process++;
-                            
-                        },
-                        hel:function(){
-                            this.process--;
-                        }
-                    }
-                })
+                    </div>
+                </div>
 
-            })
-        </script>
+            </div>
+        </div>
+
     </div>
 </body>
 <script>
-    function login() {
-        require(['hdjs', 'bootstrap'], function (hdjs) {
 
-            hdjs.modal({
-                content: ['http://localhost'],//加载的远程地址
-                title: '添加用户',
-                width: 800,
-                show: true,//直接显示
-            })
-        })
+        // I wish I could do this with CSS
 
-    }
+        var projects = document.getElementById('projects');
 
+        function resize() {
 
+            var baseWidth = 200;
+            var baseHeight = 150;
 
+            var fullWidth = projects.clientWidth;
+            var width = (fullWidth / (Math.ceil(fullWidth / baseWidth) * baseWidth)) * baseWidth;
+            var height = (width / baseWidth) * baseHeight;
 
-</script>
+            for (var i = 0; i < projects.children.length; i++) {
+
+                var child = projects.children[i];
+
+                child.style.width = width + 'px';
+                child.style.height = height + 'px';
+
+            }
+
+        }
+
+        window.addEventListener('resize', resize, false);
+        resize();
+
+    </script>
 
 </html>
